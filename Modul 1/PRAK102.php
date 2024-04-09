@@ -1,10 +1,10 @@
 <?php
-    $r = 4.2;
-    $tinggi = 5.4;
-    $panjang = 8.9; 
-    $lebar = 14.7; 
+    $tinggi_prisma = 5.4;
+    $sisi = 7.9;
     
-    $volume_prisma_segitiga = round((($panjang * $lebar) / 2) * $tinggi, 3);
+    $alas = $sisi;
+    $tinggi = round(sqrt($sisi * $sisi - (($sisi / 2) * ($sisi / 2))), 2);
+    $volume_prisma_segitiga = round((0.5 * $alas * $tinggi) * $tinggi_prisma, 3);
     
     echo "$volume_prisma_segitiga m3";
 ?>
